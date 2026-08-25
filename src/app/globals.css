@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #060608;
+  --color-foreground: #ffffff;
+  --color-navy-900: #060608;
+  --color-navy-800: #0c0b16;
+  --color-navy-700: #1c1836;
+  --color-navy-card: #0e0d17;
+  --color-navy-border: #34305c;
+  --color-divider: #26233d;
+  --color-accent: #6a5cff;
+  --color-accent-light: #b6aeff;
+  --color-muted: #9b96b8;
+  --color-semaphore-green: #28c840;
+  --color-semaphore-amber: #febc2e;
+  --color-semaphore-red: #ff5f57;
+  --font-sans: var(--font-plus-jakarta-sans);
+  --animate-marquee: marquee 36s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation-play-state: paused;
+  }
+}
+
+html,
+body {
+  background: #060608;
+  color: #ffffff;
+  font-family: var(--font-plus-jakarta-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, #1c1836 0%, #0c0b16 45%, #060608 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #6a5cff;
+  color: #ffffff;
+}
