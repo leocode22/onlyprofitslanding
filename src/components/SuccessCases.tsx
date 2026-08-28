@@ -1,3 +1,4 @@
+/*
 import { Reveal } from "@/components/Reveal";
 import { CaseCard } from "@/components/CaseCard";
 import { successCases } from "@/lib/cases";
@@ -43,3 +44,4 @@ export function SuccessCases() {
     </section>
   );
 }
+*/
